@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculater</title>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td colspan="3"><input type="text" id="result" class="screen"></td>
+                <td><input type="button" value="AC" onclick="clearScreen()" class="clear"/></td>
+            </tr>
+        </table>
+        <div class="keys">
+            <input type="button" value="7" class="button" onclick="display('7')"></input>
+            <input type="button" value="8" class="button" onclick="display('8')"></input>
+            <input type="button" value="9" class="button" onclick="display('9')"></input>
+            <input type="button" value="/" class="button" onclick="display('/')"></input>
+            <input type="button" value="4" class="button" onclick="display('4')"></input>
+            <input type="button" value="5" class="button" onclick="display('5')"></input>
+            <input type="button" value="6" class="button" onclick="display('6')"></input>
+            <input type="button" value="*" class="button" onclick="display('*')"></input>
+            <input type="button" value="1" class="button" onclick="display('1')"></input>
+            <input type="button" value="2" class="button" onclick="display('2')"></input>
+            <input type="button" value="3" class="button" onclick="display('3')"></input>
+            <input type="button" value="-" class="button" onclick="display('-')"></input>
+            <input type="button" value="0" class="button" onclick="display('0')"></input>
+            <input type="button" value="." class="button" onclick="display('.')"></input>
+            <input type="button" value="=" class="button equal-sign" onclick="solve()"></input>
+            <input type="button" value="+" class="button" onclick="display('+')"></input>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
